@@ -1,0 +1,17 @@
+{
+    "id": "excel-templater",
+    "version": "0.1.0",
+    "meta": {
+        "label": "Excel Templater - Populating excel Templates",
+        "category": "Excel",
+        "description": "This plugin populated excel templates",
+        "author": "Dataiku (Pierre PETRELLA)",
+        "icon": " icon-file",
+        "licenseInfo": "Apache Software License",
+        "url": "https://www.dataiku.com/product/plugins/excel-templater/",
+        "tags": [
+            "Excel"
+        ],
+        "supportLevel": "NOT_SUPPORTED"
+    }
+}

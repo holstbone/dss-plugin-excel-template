@@ -1,0 +1,62 @@
+// This file is the descriptor for the Custom code recipe test
+{
+    "meta": {
+        "label": "Populate Excel Template from Dataiku Datasets",
+        
+        "description": "Populate Excel Template from Dataiku Datasets",
+        "icon": "icon-table"
+    },
+    "kind": "PYTHON",
+    "selectableFromFolder": "input_folder",
+    "inputRoles": [
+        {
+            "name": "input_folder",
+            "label": "Input Template Folder",
+            "description": "Folder containing the template to populate",
+            "arity": "UNARY",
+            "required": true,
+            "acceptsDataset": false,
+            "acceptsManagedFolder": true
+            
+        },
+        {
+            "name": "input_datasets",
+            "label": "Datasets to populate the excel template",
+            "description": "Datasets to populate the excel template",
+            "arity": "NARY",
+            "required": false,
+            "acceptsDataset": true,
+            "acceptsManagedFolder": false
+            
+        }
+    ],
+    "outputRoles": [
+        {
+            "name": "output_folder",
+            "label": "Output Template Folder",
+            "description": "Folder to store output template folder",
+            "arity": "UNARY",
+            "required": true,
+            "acceptsDataset": false,
+            "acceptsManagedFolder": true
+        }
+    ],
+    
+    "params": [
+        {
+            "name": "dataset_tag",
+            "label": "Dataset Tag",
+            "type": "STRING",
+            "description": "Tag used to indicate where to insert a Dataiku dataset. Default is 'DATASET'",
+            "mandatory": false
+        },
+        {
+            "name": "output_file_name",
+            "label": "Output Excel Name",
+            "description": "Name the output file name",
+            "type": "STRING",
+            "mandatory": false
+        }
+    ],
+    "resourceKeys": []
+}
